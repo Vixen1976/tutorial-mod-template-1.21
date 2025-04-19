@@ -2,6 +2,8 @@ package net.vixen.tutorial;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.vixen.tutorial.block.ModBlocks;
+import net.vixen.tutorial.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 	}
 }
